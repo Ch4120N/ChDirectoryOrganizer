@@ -88,4 +88,7 @@ class MessageDecorators:
     def prompt(self, RequestMessage: str):
         return (Color.Purple + '[ ' + Color.White + '?' + Color.Purple + ' ] ' + Color.White + RequestMessage)
 
+# Requried Variables
 MsgDec = MessageDecorators()
+MANIFEST_FILE = ".ChDirectoryOrganizer_Manifest.json"
+
