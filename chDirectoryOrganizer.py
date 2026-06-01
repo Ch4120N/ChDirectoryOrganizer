@@ -64,3 +64,27 @@ class Color:
         White      = ''
         Reset      = ''
 
+class MessageDecorators:
+    def info(self, RequestMessage: str):
+        sys.stdout.write(Color.Aqua + '[ ' + Color.White + '*' + Color.Aqua + ' ] '  + Color.White + RequestMessage + '\n' + Color.Reset)
+        sys.stdout.flush()
+    
+    def success(self, RequestMessage: str):
+        sys.stdout.write(Color.Green + '[ ' + Color.White + '+' + Color.Green + ' ] '  + Color.White + RequestMessage + '\n' + Color.Reset)
+        sys.stdout.flush()
+    
+    def error(self, RequestMessage: str):
+        sys.stdout.write(Color.Red + '[ ' + Color.White + '-' + Color.Red + ' ] '  + Color.White + RequestMessage + '\n' + Color.Reset)
+        sys.stdout.flush()
+
+    def warning(self, RequestMessage: str):
+        sys.stdout.write(Color.Orange + '[ ' + Color.White + '!' + Color.Orange + ' ] '  + Color.White + RequestMessage + '\n' + Color.Reset)
+        sys.stdout.flush()
+    
+    def progress(self, RequestMessage: str):
+        sys.stdout.write(Color.White + '[ ' + Color.Aqua + '#' + Color.White + ' ] ' + RequestMessage + '\n' + Color.Reset)
+        sys.stdout.flush()
+    
+    def prompt(self, RequestMessage: str):
+        return (Color.Purple + '[ ' + Color.White + '?' + Color.Purple + ' ] ' + Color.White + RequestMessage)
+
