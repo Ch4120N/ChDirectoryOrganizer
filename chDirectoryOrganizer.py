@@ -263,7 +263,7 @@ class FileOrganizer:
 
 
 # Main Class
-class Ch4120N_Folder_Organizer:
+class Ch4120N_Directory_Organizer:
     def build_parser(self):
         parser = argparse.ArgumentParser(description="ChDirectoryOrganaizer - Advanced file organizer by Ch4120N")
         subparsers = parser.add_subparsers(dest="mode")
@@ -444,3 +444,10 @@ class Ch4120N_Folder_Organizer:
                 low = high = int(range_str)
             brackets.append((low, high, name))
         return brackets
+
+
+
+if __name__ == "__main__":
+    app = Ch4120N_Directory_Organizer()
+    args = app.build_parser()
+    app.run(args)
