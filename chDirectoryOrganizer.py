@@ -7,7 +7,7 @@
 ######################################################################################################
 
 """
-ChFolderOrganaizer - Advanced cross-platform directory organizer.
+ChDirectoryOrganaizer - Advanced cross-platform directory organizer.
 Owner   : Ch4120N
 GitHub  : GitHub.COM/Ch4120N
 Telegram: T.ME/Ch4120N
@@ -451,3 +451,11 @@ if __name__ == "__main__":
     app = Ch4120N_Directory_Organizer()
     args = app.build_parser()
     app.run(args)
+
+# TODO: ADD THE BANNER INTO THE TERMINAL OUTPUT
+#    ________    ____  _      ____                         _                
+#   / ____/ /_  / __ \(_)____/ __ \_________ _____ _____  (_)___  ___  _____
+#  / /   / __ \/ / / / / ___/ / / / ___/ __ `/ __ `/ __ \/ /_  / / _ \/ ___/
+# / /___/ / / / /_/ / / /  / /_/ / /  / /_/ / /_/ / / / / / / /_/  __/ /    
+# \____/_/ /_/_____/_/_/   \____/_/   \__, /\__,_/_/ /_/_/ /___/\___/_/     
+#                                    /____/                                 
