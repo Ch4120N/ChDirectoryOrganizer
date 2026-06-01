@@ -39,3 +39,28 @@ try:
 except ImportError:
     PROGRESS_AVAILABLE = False
 
+
+
+
+# Color Class
+class Color:
+    if FORCED_COLORED:
+        Aqua       = Fore.LIGHTCYAN_EX
+        Green      = Fore.LIGHTGREEN_EX
+        Red        = Fore.LIGHTRED_EX
+        Blue       = Fore.LIGHTBLUE_EX
+        Yellow     = Fore.LIGHTYELLOW_EX
+        Orange     = Fore.YELLOW
+        Purple     = Fore.LIGHTMAGENTA_EX
+        White      = Fore.LIGHTWHITE_EX
+        Reset      = Fore.RESET
+    else:
+        Aqua       = ''
+        Green      = ''
+        Red        = ''
+        Blue       = ''
+        Yellow     = ''
+        Purple     = ''
+        White      = ''
+        Reset      = ''
+
