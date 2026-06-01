@@ -88,3 +88,4 @@ class MessageDecorators:
     def prompt(self, RequestMessage: str):
         return (Color.Purple + '[ ' + Color.White + '?' + Color.Purple + ' ] ' + Color.White + RequestMessage)
 
+MsgDec = MessageDecorators()
