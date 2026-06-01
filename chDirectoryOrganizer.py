@@ -22,3 +22,20 @@ from datetime import datetime
 from collections import defaultdict
 from typing import Callable, Dict, List, Optional, Tuple
 
+# Optional dependencies
+
+try:
+    from colorama import Fore, init
+    init(autoreset=True)
+
+    FORCED_COLORED = True
+except ImportError:
+    FORCED_COLORED = False
+
+
+try:
+    from tqdm import tqdm
+    PROGRESS_AVAILABLE = True
+except ImportError:
+    PROGRESS_AVAILABLE = False
+
